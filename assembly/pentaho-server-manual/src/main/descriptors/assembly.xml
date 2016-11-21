@@ -1,0 +1,22 @@
+<assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.0.0 http://maven.apache.org/xsd/assembly-2.0.0.xsd">
+  <id>ce</id>
+  <formats>
+    <format>zip</format>
+  </formats>
+  <includeBaseDirectory>false</includeBaseDirectory>
+  <files>
+    <file>
+      <source>target/pentaho-solutions.zip</source>
+      <outputDirectory>/</outputDirectory>
+      <destName>pentaho-solutions.zip</destName>
+    </file>
+    <file>
+      <source>target/pentaho-data.zip</source>
+      <outputDirectory>/</outputDirectory>
+      <destName>pentaho-data.zip</destName>
+    </file>
+  </files>
+
+</assembly>

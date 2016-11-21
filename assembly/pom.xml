@@ -94,6 +94,13 @@
     <wsdl4j.version>1.5.0</wsdl4j.version>
     <xalan.version>2.7.1</xalan.version>
   </properties>
+  <modules>
+
+    <module>pentaho-server-manual</module>
+
+    <!-- <module>assembly</module> -->
+
+  </modules>
 
   <build>
     <plugins>
@@ -210,7 +217,7 @@
                   <artifactId>pentaho-karaf-assembly</artifactId>
                   <version>${project.version}</version>
                   <type>zip</type>
-                  <outputDirectory>${target.pentaho-server.plugins.dir}</outputDirectory>
+                  <outputDirectory>${target.dir}/temp</outputDirectory>
                   <classifier>server</classifier>
                 </artifactItem>
                 <artifactItem>
@@ -543,8 +550,7 @@
           </execution>
         </executions>
       </plugin>
-            
-  
+
 
     <plugin>
       <artifactId>maven-resources-plugin</artifactId>
